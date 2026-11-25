@@ -1,0 +1,11 @@
+variant,klasifikator,f1_cv_priemer,f1_cv_odchylka,cas_s,velkost_slovnika
+A_bez_uprav,MultinomialNB,0.7325,0.008,9.1,120609
+A_bez_uprav,LinearSVC,0.7659,0.0122,7.1,120609
+B_male_pismena,MultinomialNB,0.7405,0.0096,2.9,101631
+B_male_pismena,LinearSVC,0.7693,0.0158,5.6,101631
+C_cistenie,MultinomialNB,0.736,0.0109,2.5,94365
+C_cistenie,LinearSVC,0.7663,0.0165,5.0,94365
+D_stop_slova,MultinomialNB,0.7583,0.0106,1.8,94056
+D_stop_slova,LinearSVC,0.7715,0.0119,3.6,94056
+E_stemming,MultinomialNB,0.7551,0.0155,2.0,76864
+E_stemming,LinearSVC,0.7647,0.0136,2.9,76864

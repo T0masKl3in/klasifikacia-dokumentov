@@ -1,0 +1,15 @@
+reprezentacia,klasifikator,f1_cv_priemer,f1_cv_odchylka,cas_s,velkost_slovnika
+R1_binarne_BoW,MultinomialNB,0.7159,0.0145,3.2,101322
+R1_binarne_BoW,LinearSVC,0.6713,0.0049,23.5,101322
+R2_pocetnosti_TF,MultinomialNB,0.7152,0.015,3.4,101322
+R2_pocetnosti_TF,LinearSVC,0.6585,0.0119,39.7,101322
+R3_TF_normovane,MultinomialNB,0.7337,0.0085,3.3,101322
+R3_TF_normovane,LinearSVC,0.7464,0.0138,6.9,101322
+R4_TF_IDF,MultinomialNB,0.762,0.0099,3.2,101322
+R4_TF_IDF,LinearSVC,0.7748,0.0127,7.3,101322
+R5_TF_IDF_log_tf,MultinomialNB,0.7555,0.01,3.3,101322
+R5_TF_IDF_log_tf,LinearSVC,0.7762,0.0111,7.3,101322
+R6_TF_IDF_log_tf_bigramy,MultinomialNB,0.7617,0.0105,16.4,943737
+R6_TF_IDF_log_tf_bigramy,LinearSVC,0.7837,0.0104,38.2,943737
+R7_R6_bez_zriedkavych,MultinomialNB,0.758,0.0136,7.0,147857
+R7_R6_bez_zriedkavych,LinearSVC,0.7768,0.0111,12.1,147857

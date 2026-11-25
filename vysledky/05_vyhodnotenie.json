@@ -1,0 +1,126 @@
+{
+  "vyber_podla_cv": {
+    "TF-IDF": "ComplementNB",
+    "Embedding": "all-MiniLM-L6-v2|useky|kNN",
+    "Hybrid": "all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC",
+    "celkovo": "all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC"
+  },
+  "mcnemar": [
+    {
+      "A": "ComplementNB",
+      "B": "all-MiniLM-L6-v2|useky|kNN",
+      "a_spravne_b_zle": 867,
+      "a_zle_b_spravne": 582,
+      "chi2_s_korekciou": 55.663216011042095,
+      "p_chi2": 8.601273433273169e-14,
+      "p_presny_binomicky": 7.178489843804263e-14
+    },
+    {
+      "A": "all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC",
+      "B": "ComplementNB",
+      "a_spravne_b_zle": 474,
+      "a_zle_b_spravne": 383,
+      "chi2_s_korekciou": 9.451575262543757,
+      "p_chi2": 0.002109678345777284,
+      "p_presny_binomicky": 0.0020918093901631262
+    },
+    {
+      "A": "LinearSVC",
+      "B": "MultinomialNB",
+      "a_spravne_b_zle": 544,
+      "a_zle_b_spravne": 479,
+      "chi2_s_korekciou": 4.0039100684261975,
+      "p_chi2": 0.04539483857252074,
+      "p_presny_binomicky": 0.04534203783098553
+    },
+    {
+      "A": "LinearSVC",
+      "B": "LogistickaRegresia",
+      "a_spravne_b_zle": 92,
+      "a_zle_b_spravne": 88,
+      "chi2_s_korekciou": 0.05,
+      "p_chi2": 0.8230632737581214,
+      "p_presny_binomicky": 0.8231404466836137
+    },
+    {
+      "A": "ComplementNB",
+      "B": "MultinomialNB",
+      "a_spravne_b_zle": 416,
+      "a_zle_b_spravne": 248,
+      "chi2_s_korekciou": 42.001506024096386,
+      "p_chi2": 9.120314866099444e-11,
+      "p_presny_binomicky": 7.269342707644944e-11
+    }
+  ],
+  "najcastejsie_zameny": [
+    {
+      "skutocna": "talk.politics.misc",
+      "predikovana": "talk.politics.guns",
+      "pocet": 91,
+      "podiel_triedy": 0.2935
+    },
+    {
+      "skutocna": "talk.religion.misc",
+      "predikovana": "soc.religion.christian",
+      "pocet": 75,
+      "podiel_triedy": 0.2988
+    },
+    {
+      "skutocna": "alt.atheism",
+      "predikovana": "soc.religion.christian",
+      "pocet": 63,
+      "podiel_triedy": 0.1975
+    },
+    {
+      "skutocna": "comp.windows.x",
+      "predikovana": "comp.graphics",
+      "pocet": 41,
+      "podiel_triedy": 0.1038
+    },
+    {
+      "skutocna": "talk.religion.misc",
+      "predikovana": "alt.atheism",
+      "pocet": 40,
+      "podiel_triedy": 0.1594
+    },
+    {
+      "skutocna": "comp.os.ms-windows.misc",
+      "predikovana": "comp.sys.ibm.pc.hardware",
+      "pocet": 36,
+      "podiel_triedy": 0.0914
+    },
+    {
+      "skutocna": "comp.sys.mac.hardware",
+      "predikovana": "comp.sys.ibm.pc.hardware",
+      "pocet": 29,
+      "podiel_triedy": 0.0753
+    },
+    {
+      "skutocna": "comp.sys.ibm.pc.hardware",
+      "predikovana": "comp.os.ms-windows.misc",
+      "pocet": 27,
+      "podiel_triedy": 0.0689
+    },
+    {
+      "skutocna": "comp.sys.ibm.pc.hardware",
+      "predikovana": "comp.sys.mac.hardware",
+      "pocet": 26,
+      "podiel_triedy": 0.0663
+    },
+    {
+      "skutocna": "comp.windows.x",
+      "predikovana": "comp.os.ms-windows.misc",
+      "pocet": 25,
+      "podiel_triedy": 0.0633
+    }
+  ],
+  "prazdne_testovacie_bez_metadat": 224,
+  "parametre": {
+    "svc_C": 10.0,
+    "nb_alpha": 0.003,
+    "emb_lr_C": 3,
+    "emb_najlepsi": {
+      "n_neighbors": 5
+    }
+  }
+}

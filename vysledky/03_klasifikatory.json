@@ -1,0 +1,372 @@
+{
+  "predspracovanie": "male+stop",
+  "reprezentacia": "R6_TF_IDF_log_tf_bigramy",
+  "modely": {
+    "Najcastejsia_trieda": {
+      "najlepsie_parametre": {
+        "strategy": "most_frequent"
+      },
+      "cv_f1_priemer": 0.0051,
+      "cv_f1_odchylka": 0.0,
+      "mriezka": [
+        {
+          "parametre": {
+            "strategy": "most_frequent"
+          },
+          "cv_f1": 0.0051
+        }
+      ],
+      "test": {
+        "accuracy": 0.0524,
+        "precision_macro": 0.0026,
+        "recall_macro": 0.05,
+        "f1_macro": 0.005
+      },
+      "cas_ucenia_s": 3.91,
+      "cas_predikcie_s": 1.47,
+      "cas_celeho_hladania_s": 19.6
+    },
+    "MultinomialNB": {
+      "najlepsie_parametre": {
+        "alpha": 0.003
+      },
+      "cv_f1_priemer": 0.7804,
+      "cv_f1_odchylka": 0.013,
+      "mriezka": [
+        {
+          "parametre": {
+            "alpha": 0.0003
+          },
+          "cv_f1": 0.7725
+        },
+        {
+          "parametre": {
+            "alpha": 0.001
+          },
+          "cv_f1": 0.7768
+        },
+        {
+          "parametre": {
+            "alpha": 0.003
+          },
+          "cv_f1": 0.7804
+        },
+        {
+          "parametre": {
+            "alpha": 0.01
+          },
+          "cv_f1": 0.778
+        },
+        {
+          "parametre": {
+            "alpha": 0.03
+          },
+          "cv_f1": 0.7739
+        },
+        {
+          "parametre": {
+            "alpha": 0.1
+          },
+          "cv_f1": 0.7617
+        },
+        {
+          "parametre": {
+            "alpha": 0.3
+          },
+          "cv_f1": 0.7433
+        },
+        {
+          "parametre": {
+            "alpha": 1.0
+          },
+          "cv_f1": 0.7082
+        }
+      ],
+      "test": {
+        "accuracy": 0.701,
+        "precision_macro": 0.7048,
+        "recall_macro": 0.6884,
+        "f1_macro": 0.6882
+      },
+      "cas_ucenia_s": 2.49,
+      "cas_predikcie_s": 1.25,
+      "cas_celeho_hladania_s": 29.7
+    },
+    "ComplementNB": {
+      "najlepsie_parametre": {
+        "alpha": 0.1
+      },
+      "cv_f1_priemer": 0.7953,
+      "cv_f1_odchylka": 0.0085,
+      "mriezka": [
+        {
+          "parametre": {
+            "alpha": 0.0003
+          },
+          "cv_f1": 0.7435
+        },
+        {
+          "parametre": {
+            "alpha": 0.001
+          },
+          "cv_f1": 0.7511
+        },
+        {
+          "parametre": {
+            "alpha": 0.003
+          },
+          "cv_f1": 0.7618
+        },
+        {
+          "parametre": {
+            "alpha": 0.01
+          },
+          "cv_f1": 0.7749
+        },
+        {
+          "parametre": {
+            "alpha": 0.03
+          },
+          "cv_f1": 0.7847
+        },
+        {
+          "parametre": {
+            "alpha": 0.1
+          },
+          "cv_f1": 0.7953
+        },
+        {
+          "parametre": {
+            "alpha": 0.3
+          },
+          "cv_f1": 0.7924
+        },
+        {
+          "parametre": {
+            "alpha": 1.0
+          },
+          "cv_f1": 0.7816
+        }
+      ],
+      "test": {
+        "accuracy": 0.7233,
+        "precision_macro": 0.7222,
+        "recall_macro": 0.7087,
+        "f1_macro": 0.7078
+      },
+      "cas_ucenia_s": 2.55,
+      "cas_predikcie_s": 1.02,
+      "cas_celeho_hladania_s": 26.3
+    },
+    "LinearSVC": {
+      "najlepsie_parametre": {
+        "C": 10.0
+      },
+      "cv_f1_priemer": 0.7848,
+      "cv_f1_odchylka": 0.0103,
+      "mriezka": [
+        {
+          "parametre": {
+            "C": 0.03
+          },
+          "cv_f1": 0.7258
+        },
+        {
+          "parametre": {
+            "C": 0.1
+          },
+          "cv_f1": 0.753
+        },
+        {
+          "parametre": {
+            "C": 0.3
+          },
+          "cv_f1": 0.7722
+        },
+        {
+          "parametre": {
+            "C": 1.0
+          },
+          "cv_f1": 0.7837
+        },
+        {
+          "parametre": {
+            "C": 3.0
+          },
+          "cv_f1": 0.7847
+        },
+        {
+          "parametre": {
+            "C": 10.0
+          },
+          "cv_f1": 0.7848
+        },
+        {
+          "parametre": {
+            "C": 30.0
+          },
+          "cv_f1": 0.7844
+        }
+      ],
+      "test": {
+        "accuracy": 0.7096,
+        "precision_macro": 0.7072,
+        "recall_macro": 0.6966,
+        "f1_macro": 0.6962
+      },
+      "cas_ucenia_s": 28.15,
+      "cas_predikcie_s": 0.86,
+      "cas_celeho_hladania_s": 361.1
+    },
+    "kNN": {
+      "najlepsie_parametre": {
+        "n_neighbors": 20
+      },
+      "cv_f1_priemer": 0.7375,
+      "cv_f1_odchylka": 0.0151,
+      "mriezka": [
+        {
+          "parametre": {
+            "n_neighbors": 3
+          },
+          "cv_f1": 0.6762
+        },
+        {
+          "parametre": {
+            "n_neighbors": 5
+          },
+          "cv_f1": 0.7068
+        },
+        {
+          "parametre": {
+            "n_neighbors": 10
+          },
+          "cv_f1": 0.7325
+        },
+        {
+          "parametre": {
+            "n_neighbors": 20
+          },
+          "cv_f1": 0.7375
+        },
+        {
+          "parametre": {
+            "n_neighbors": 40
+          },
+          "cv_f1": 0.7327
+        },
+        {
+          "parametre": {
+            "n_neighbors": 80
+          },
+          "cv_f1": 0.719
+        }
+      ],
+      "test": {
+        "accuracy": 0.6657,
+        "precision_macro": 0.6643,
+        "recall_macro": 0.6534,
+        "f1_macro": 0.6532
+      },
+      "cas_ucenia_s": 1.97,
+      "cas_predikcie_s": 2.11,
+      "cas_celeho_hladania_s": 18.4
+    },
+    "RandomForest": {
+      "najlepsie_parametre": {
+        "min_samples_leaf": 1
+      },
+      "cv_f1_priemer": 0.6836,
+      "cv_f1_odchylka": 0.0072,
+      "mriezka": [
+        {
+          "parametre": {
+            "min_samples_leaf": 1
+          },
+          "cv_f1": 0.6836
+        }
+      ],
+      "test": {
+        "accuracy": 0.6309,
+        "precision_macro": 0.657,
+        "recall_macro": 0.6157,
+        "f1_macro": 0.6191
+      },
+      "cas_ucenia_s": 249.54,
+      "cas_predikcie_s": 2.67,
+      "cas_celeho_hladania_s": 1047.5
+    },
+    "LogistickaRegresia": {
+      "najlepsie_parametre": {
+        "alpha": 1e-06
+      },
+      "cv_f1_priemer": 0.7789,
+      "cv_f1_odchylka": 0.0087,
+      "mriezka": [
+        {
+          "parametre": {
+            "alpha": 1e-08
+          },
+          "cv_f1": 0.7338
+        },
+        {
+          "parametre": {
+            "alpha": 3e-08
+          },
+          "cv_f1": 0.7424
+        },
+        {
+          "parametre": {
+            "alpha": 1e-07
+          },
+          "cv_f1": 0.7584
+        },
+        {
+          "parametre": {
+            "alpha": 3e-07
+          },
+          "cv_f1": 0.7728
+        },
+        {
+          "parametre": {
+            "alpha": 1e-06
+          },
+          "cv_f1": 0.7789
+        },
+        {
+          "parametre": {
+            "alpha": 3e-06
+          },
+          "cv_f1": 0.7777
+        },
+        {
+          "parametre": {
+            "alpha": 1e-05
+          },
+          "cv_f1": 0.775
+        },
+        {
+          "parametre": {
+            "alpha": 3e-05
+          },
+          "cv_f1": 0.7668
+        },
+        {
+          "parametre": {
+            "alpha": 0.0001
+          },
+          "cv_f1": 0.7415
+        }
+      ],
+      "test": {
+        "accuracy": 0.7091,
+        "precision_macro": 0.7105,
+        "recall_macro": 0.6955,
+        "f1_macro": 0.6951
+      },
+      "cas_ucenia_s": 3.92,
+      "cas_predikcie_s": 0.92,
+      "cas_celeho_hladania_s": 83.1
+    }
+  }
+}

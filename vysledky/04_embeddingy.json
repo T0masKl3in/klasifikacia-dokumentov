@@ -1,0 +1,129 @@
+{
+  "modely": {
+    "all-MiniLM-L6-v2|zaciatok|LogistickaRegresia": {
+      "najlepsie_parametre": {
+        "C": 3
+      },
+      "cv_f1_priemer": 0.7225,
+      "cv_f1_odchylka": 0.013,
+      "test": {
+        "accuracy": 0.6722,
+        "precision_macro": 0.6642,
+        "recall_macro": 0.6593,
+        "f1_macro": 0.6589
+      },
+      "cas_ucenia_s": 1.03,
+      "cas_predikcie_s": 0.004
+    },
+    "all-MiniLM-L6-v2|zaciatok|LinearSVC": {
+      "najlepsie_parametre": {
+        "C": 0.3
+      },
+      "cv_f1_priemer": 0.7221,
+      "cv_f1_odchylka": 0.0129,
+      "test": {
+        "accuracy": 0.6763,
+        "precision_macro": 0.6652,
+        "recall_macro": 0.6621,
+        "f1_macro": 0.6588
+      },
+      "cas_ucenia_s": 5.87,
+      "cas_predikcie_s": 0.011
+    },
+    "all-MiniLM-L6-v2|zaciatok|kNN": {
+      "najlepsie_parametre": {
+        "n_neighbors": 5
+      },
+      "cv_f1_priemer": 0.774,
+      "cv_f1_odchylka": 0.009,
+      "test": {
+        "accuracy": 0.6806,
+        "precision_macro": 0.6768,
+        "recall_macro": 0.6689,
+        "f1_macro": 0.6688
+      },
+      "cas_ucenia_s": 0.01,
+      "cas_predikcie_s": 0.984
+    },
+    "all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC": {
+      "najlepsie_parametre": {
+        "w": 0.2,
+        "C": 10.0
+      },
+      "cv_f1_priemer": 0.8046,
+      "test": {
+        "accuracy": 0.7354,
+        "precision_macro": 0.7313,
+        "recall_macro": 0.7215,
+        "f1_macro": 0.7205
+      },
+      "cas_ucenia_s": 42.0
+    },
+    "all-MiniLM-L6-v2|useky|LogistickaRegresia": {
+      "najlepsie_parametre": {
+        "C": 3
+      },
+      "cv_f1_priemer": 0.7254,
+      "cv_f1_odchylka": 0.0163,
+      "test": {
+        "accuracy": 0.6737,
+        "precision_macro": 0.666,
+        "recall_macro": 0.6608,
+        "f1_macro": 0.6605
+      },
+      "cas_ucenia_s": 1.47,
+      "cas_predikcie_s": 0.003
+    },
+    "all-MiniLM-L6-v2|useky|LinearSVC": {
+      "najlepsie_parametre": {
+        "C": 0.3
+      },
+      "cv_f1_priemer": 0.7234,
+      "cv_f1_odchylka": 0.0143,
+      "test": {
+        "accuracy": 0.6784,
+        "precision_macro": 0.6673,
+        "recall_macro": 0.6641,
+        "f1_macro": 0.6606
+      },
+      "cas_ucenia_s": 5.97,
+      "cas_predikcie_s": 0.012
+    },
+    "all-MiniLM-L6-v2|useky|kNN": {
+      "najlepsie_parametre": {
+        "n_neighbors": 5
+      },
+      "cv_f1_priemer": 0.7773,
+      "cv_f1_odchylka": 0.0075,
+      "test": {
+        "accuracy": 0.6855,
+        "precision_macro": 0.6811,
+        "recall_macro": 0.6734,
+        "f1_macro": 0.673
+      },
+      "cas_ucenia_s": 0.01,
+      "cas_predikcie_s": 0.961
+    },
+    "all-MiniLM-L6-v2|useky|Hybrid_TFIDF_LinearSVC": {
+      "najlepsie_parametre": {
+        "w": 0.2,
+        "C": 10.0
+      },
+      "cv_f1_priemer": 0.8042,
+      "test": {
+        "accuracy": 0.7375,
+        "precision_macro": 0.7331,
+        "recall_macro": 0.7238,
+        "f1_macro": 0.7229
+      },
+      "cas_ucenia_s": 40.39
+    }
+  },
+  "hybrid_svc_c": 10.0,
+  "info": {
+    "all-MiniLM-L6-v2": {
+      "rozmer": 384,
+      "max_tokenov": 256
+    }
+  }
+}

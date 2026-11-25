@@ -1,0 +1,7 @@
+nastavenie,model,accuracy,f1_macro
+"učenie s metadátami, test s metadátami",MultinomialNB,0.8328,0.8291
+"učenie s metadátami, test s metadátami",LinearSVC,0.8692,0.8637
+"učenie s metadátami, test bez metadát",MultinomialNB,0.7076,0.6958
+"učenie s metadátami, test bez metadát",LinearSVC,0.7049,0.6955
+"učenie bez metadát, test bez metadát",MultinomialNB,0.701,0.6882
+"učenie bez metadát, test bez metadát",LinearSVC,0.7096,0.6962

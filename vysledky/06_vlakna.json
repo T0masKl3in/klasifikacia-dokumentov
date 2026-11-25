@@ -1,0 +1,22 @@
+{
+  "trenovaci_k_trenovaciemu": {
+    "dokumentov": 11003,
+    "rovnaky_predmet_podiel": 0.3472,
+    "sused_ma_rovnaku_triedu_podiel": 0.786,
+    "rovnaka_trieda_ak_rovnaky_predmet": 0.9932,
+    "rovnaka_trieda_ak_iny_predmet": 0.6758
+  },
+  "testovaci_k_trenovaciemu": {
+    "dokumentov": 7532,
+    "rovnaky_predmet_podiel": 0.1159,
+    "sused_ma_rovnaku_triedu_podiel": 0.6545,
+    "rovnaka_trieda_ak_rovnaky_predmet": 0.9805,
+    "rovnaka_trieda_ak_iny_predmet": 0.6118
+  },
+  "kontrola_nahodny_sused_rovnaky_predmet": 0.0008,
+  "bez_predmetu": {
+    "train": 0,
+    "test": 0
+  },
+  "testovacich_s_predmetom_aj_v_treningu": 0.3192
+}

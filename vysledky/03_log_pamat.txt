@@ -1,0 +1,37 @@
+Predspracovanie male+stop, reprezentácia R6_TF_IDF_log_tf_bigramy
+Najcastejsia_trieda  {'strategy': 'most_frequent'} CV F1 0.0051 test {'accuracy': 0.0524, 'precision_macro': 0.0026, 'recall_macro': 0.05, 'f1_macro': 0.005} uèenie 17.11 s
+MultinomialNB        {'alpha': 0.003} CV F1 0.7804 test {'accuracy': 0.701, 'precision_macro': 0.7048, 'recall_macro': 0.6884, 'f1_macro': 0.6882} uèenie 5.6 s
+ComplementNB         {'alpha': 0.1} CV F1 0.7953 test {'accuracy': 0.7233, 'precision_macro': 0.7222, 'recall_macro': 0.7087, 'f1_macro': 0.7078} uèenie 5.42 s
+Traceback (most recent call last):
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\03_klasifikatory.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\03_klasifikatory.py", line 79, in main
+    hladanie.fit(tr, ytr)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1134, in fit
+    self._run_search(evaluate_candidates, callback_ctx=root_callback_ctx)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1721, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid), callback_ctx=search_ctx)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1083, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        ) in zip(candidate_split_pairs, evaluation_contexts)
+    )
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 1822, in _retrieve
+    time.sleep(0.01)
+    ~~~~~~~~~~^^^^^^
+OSError: [WinError 1450] Insufficient system resources exist to complete the requested service

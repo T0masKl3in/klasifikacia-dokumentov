@@ -1,0 +1,83 @@
+['all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC', 'Hybrid', 0.8046, 0.7354, 0.7254, 0.7448, 0.7313, 0.7215, 0.7205, 0.7104, 0.73, 42.0, None]
+['all-MiniLM-L6-v2|useky|Hybrid_TFIDF_LinearSVC', 'Hybrid', 0.8042, 0.7375, 0.7277, 0.7471, 0.7331, 0.7238, 0.7229, 0.7128, 0.7327, 40.39, None]
+['ComplementNB', 'TF-IDF', 0.7953, 0.7233, 0.7134, 0.7331, 0.7222, 0.7087, 0.7078, 0.6981, 0.7171, 2.55, 1.02]
+['LinearSVC', 'TF-IDF', 0.7848, 0.7096, 0.6992, 0.72, 0.7072, 0.6966, 0.6962, 0.6853, 0.7064, 28.15, 0.86]
+['MultinomialNB', 'TF-IDF', 0.7804, 0.701, 0.6909, 0.7114, 0.7048, 0.6884, 0.6882, 0.6784, 0.6988, 2.49, 1.25]
+['LogistickaRegresia', 'TF-IDF', 0.7789, 0.7091, 0.6989, 0.7195, 0.7105, 0.6955, 0.6951, 0.6845, 0.7056, 3.92, 0.92]
+['all-MiniLM-L6-v2|useky|kNN', 'Embedding', 0.7773, 0.6855, 0.675, 0.6956, 0.6811, 0.6734, 0.673, 0.6619, 0.6824, 0.01, 0.961]
+['all-MiniLM-L6-v2|zaciatok|kNN', 'Embedding', 0.774, 0.6806, 0.6703, 0.6901, 0.6768, 0.6689, 0.6688, 0.6583, 0.678, 0.01, 0.984]
+['kNN', 'TF-IDF', 0.7375, 0.6657, 0.6553, 0.6767, 0.6643, 0.6534, 0.6532, 0.6424, 0.6642, 1.97, 2.11]
+['all-MiniLM-L6-v2|useky|LogistickaRegresia', 'Embedding', 0.7254, 0.6737, 0.664, 0.6844, 0.666, 0.6608, 0.6605, 0.6503, 0.6704, 1.47, 0.003]
+['all-MiniLM-L6-v2|useky|LinearSVC', 'Embedding', 0.7234, 0.6784, 0.6683, 0.6889, 0.6673, 0.6641, 0.6606, 0.6498, 0.6705, 5.97, 0.012]
+['all-MiniLM-L6-v2|zaciatok|LogistickaRegresia', 'Embedding', 0.7225, 0.6722, 0.6624, 0.6824, 0.6642, 0.6593, 0.6589, 0.6487, 0.669, 1.03, 0.004]
+['all-MiniLM-L6-v2|zaciatok|LinearSVC', 'Embedding', 0.7221, 0.6763, 0.6662, 0.6871, 0.6652, 0.6621, 0.6588, 0.6482, 0.6688, 5.87, 0.011]
+['RandomForest', 'TF-IDF', 0.6836, 0.6309, 0.6198, 0.6418, 0.657, 0.6157, 0.6191, 0.6079, 0.6299, 249.54, 2.67]
+['Najcastejsia_trieda', 'TF-IDF', 0.0051, 0.0524, 0.0473, 0.0578, 0.0026, 0.05, 0.005, 0.0045, 0.0055, 3.91, 1.47]
+Výber pod¾a CV: {'TF-IDF': 'ComplementNB', 'Embedding': 'all-MiniLM-L6-v2|useky|kNN', 'Hybrid': 'all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC', 'celkovo': 'all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC'}
+McNemar ComplementNB vs all-MiniLM-L6-v2|useky|kNN: {'a_spravne_b_zle': 867, 'a_zle_b_spravne': 582, 'chi2_s_korekciou': 55.663216011042095, 'p_chi2': 8.601273433273169e-14, 'p_presny_binomicky': 7.178489843804263e-14}
+McNemar all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC vs ComplementNB: {'a_spravne_b_zle': 474, 'a_zle_b_spravne': 383, 'chi2_s_korekciou': 9.451575262543757, 'p_chi2': 0.002109678345777284, 'p_presny_binomicky': 0.0020918093901631262}
+McNemar LinearSVC vs MultinomialNB: {'a_spravne_b_zle': 544, 'a_zle_b_spravne': 479, 'chi2_s_korekciou': 4.0039100684261975, 'p_chi2': 0.04539483857252074, 'p_presny_binomicky': 0.04534203783098553}
+McNemar LinearSVC vs LogistickaRegresia: {'a_spravne_b_zle': 92, 'a_zle_b_spravne': 88, 'chi2_s_korekciou': 0.05, 'p_chi2': 0.8230632737581214, 'p_presny_binomicky': 0.8231404466836137}
+McNemar ComplementNB vs MultinomialNB: {'a_spravne_b_zle': 416, 'a_zle_b_spravne': 248, 'chi2_s_korekciou': 42.001506024096386, 'p_chi2': 9.120314866099444e-11, 'p_presny_binomicky': 7.269342707644944e-11}
+zámena {'skutocna': 'talk.politics.misc', 'predikovana': 'talk.politics.guns', 'pocet': 91, 'podiel_triedy': 0.2935}
+zámena {'skutocna': 'talk.religion.misc', 'predikovana': 'soc.religion.christian', 'pocet': 75, 'podiel_triedy': 0.2988}
+zámena {'skutocna': 'alt.atheism', 'predikovana': 'soc.religion.christian', 'pocet': 63, 'podiel_triedy': 0.1975}
+zámena {'skutocna': 'comp.windows.x', 'predikovana': 'comp.graphics', 'pocet': 41, 'podiel_triedy': 0.1038}
+zámena {'skutocna': 'talk.religion.misc', 'predikovana': 'alt.atheism', 'pocet': 40, 'podiel_triedy': 0.1594}
+zámena {'skutocna': 'comp.os.ms-windows.misc', 'predikovana': 'comp.sys.ibm.pc.hardware', 'pocet': 36, 'podiel_triedy': 0.0914}
+zámena {'skutocna': 'comp.sys.mac.hardware', 'predikovana': 'comp.sys.ibm.pc.hardware', 'pocet': 29, 'podiel_triedy': 0.0753}
+zámena {'skutocna': 'comp.sys.ibm.pc.hardware', 'predikovana': 'comp.os.ms-windows.misc', 'pocet': 27, 'podiel_triedy': 0.0689}
+zámena {'skutocna': 'comp.sys.ibm.pc.hardware', 'predikovana': 'comp.sys.mac.hardware', 'pocet': 26, 'podiel_triedy': 0.0663}
+zámena {'skutocna': 'comp.windows.x', 'predikovana': 'comp.os.ms-windows.misc', 'pocet': 25, 'podiel_triedy': 0.0633}
+krivka [0.02, 222, 0, 'MultinomialNB (TF-IDF)', 0.3506]
+krivka [0.02, 222, 0, 'LinearSVC (TF-IDF)', 0.3913]
+krivka [0.02, 222, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.555]
+krivka [0.02, 222, 1, 'MultinomialNB (TF-IDF)', 0.3587]
+krivka [0.02, 222, 1, 'LinearSVC (TF-IDF)', 0.383]
+krivka [0.02, 222, 1, 'Logistická regresia (all-MiniLM-L6-v2)', 0.5573]
+krivka [0.02, 222, 2, 'MultinomialNB (TF-IDF)', 0.3615]
+krivka [0.02, 222, 2, 'LinearSVC (TF-IDF)', 0.3937]
+krivka [0.02, 222, 2, 'Logistická regresia (all-MiniLM-L6-v2)', 0.5538]
+krivka [0.05, 551, 0, 'MultinomialNB (TF-IDF)', 0.477]
+krivka [0.05, 551, 0, 'LinearSVC (TF-IDF)', 0.5088]
+krivka [0.05, 551, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6073]
+krivka [0.05, 551, 1, 'MultinomialNB (TF-IDF)', 0.4646]
+krivka [0.05, 551, 1, 'LinearSVC (TF-IDF)', 0.4887]
+krivka [0.05, 551, 1, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6006]
+krivka [0.05, 551, 2, 'MultinomialNB (TF-IDF)', 0.4771]
+krivka [0.05, 551, 2, 'LinearSVC (TF-IDF)', 0.5001]
+krivka [0.05, 551, 2, 'Logistická regresia (all-MiniLM-L6-v2)', 0.5971]
+krivka [0.1, 1101, 0, 'MultinomialNB (TF-IDF)', 0.5374]
+krivka [0.1, 1101, 0, 'LinearSVC (TF-IDF)', 0.5662]
+krivka [0.1, 1101, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6296]
+krivka [0.1, 1101, 1, 'MultinomialNB (TF-IDF)', 0.5468]
+krivka [0.1, 1101, 1, 'LinearSVC (TF-IDF)', 0.5805]
+krivka [0.1, 1101, 1, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6412]
+krivka [0.1, 1101, 2, 'MultinomialNB (TF-IDF)', 0.5368]
+krivka [0.1, 1101, 2, 'LinearSVC (TF-IDF)', 0.5704]
+krivka [0.1, 1101, 2, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6298]
+krivka [0.2, 2200, 0, 'MultinomialNB (TF-IDF)', 0.6003]
+krivka [0.2, 2200, 0, 'LinearSVC (TF-IDF)', 0.622]
+krivka [0.2, 2200, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6448]
+krivka [0.2, 2200, 1, 'MultinomialNB (TF-IDF)', 0.5911]
+krivka [0.2, 2200, 1, 'LinearSVC (TF-IDF)', 0.6217]
+krivka [0.2, 2200, 1, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6467]
+krivka [0.2, 2200, 2, 'MultinomialNB (TF-IDF)', 0.5971]
+krivka [0.2, 2200, 2, 'LinearSVC (TF-IDF)', 0.6272]
+krivka [0.2, 2200, 2, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6329]
+krivka [0.5, 5501, 0, 'MultinomialNB (TF-IDF)', 0.6651]
+krivka [0.5, 5501, 0, 'LinearSVC (TF-IDF)', 0.6655]
+krivka [0.5, 5501, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6546]
+krivka [0.5, 5501, 1, 'MultinomialNB (TF-IDF)', 0.655]
+krivka [0.5, 5501, 1, 'LinearSVC (TF-IDF)', 0.6723]
+krivka [0.5, 5501, 1, 'Logistická regresia (all-MiniLM-L6-v2)', 0.657]
+krivka [0.5, 5501, 2, 'MultinomialNB (TF-IDF)', 0.6482]
+krivka [0.5, 5501, 2, 'LinearSVC (TF-IDF)', 0.667]
+krivka [0.5, 5501, 2, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6489]
+krivka [1.0, 11003, 0, 'MultinomialNB (TF-IDF)', 0.6882]
+krivka [1.0, 11003, 0, 'LinearSVC (TF-IDF)', 0.6962]
+krivka [1.0, 11003, 0, 'Logistická regresia (all-MiniLM-L6-v2)', 0.6605]
+metadáta ['uèenie s metadátami, test s metadátami', 'MultinomialNB', 0.8328, 0.8291]
+metadáta ['uèenie s metadátami, test s metadátami', 'LinearSVC', 0.8692, 0.8637]
+metadáta ['uèenie s metadátami, test bez metadát', 'MultinomialNB', 0.7076, 0.6958]
+metadáta ['uèenie s metadátami, test bez metadát', 'LinearSVC', 0.7049, 0.6955]

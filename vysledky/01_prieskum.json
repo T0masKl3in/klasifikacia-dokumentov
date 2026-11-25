@@ -1,0 +1,117 @@
+{
+  "pocet": {
+    "train": 11314,
+    "test": 7532,
+    "spolu": 18846,
+    "triedy": 20
+  },
+  "dlzka_slov": {
+    "train_bez_metadat": {
+      "priemer": 190.8,
+      "median": 79,
+      "p90": 320,
+      "max": 13359,
+      "prazdne": 311,
+      "do_10_slov": 673
+    },
+    "test_bez_metadat": {
+      "priemer": 170.6,
+      "median": 78,
+      "p90": 309,
+      "max": 22325,
+      "prazdne": 224,
+      "do_10_slov": 483
+    },
+    "train_s_metadatami": {
+      "priemer": 297.8,
+      "median": 178,
+      "p90": 493,
+      "max": 13386,
+      "prazdne": 0,
+      "do_10_slov": 0
+    },
+    "test_s_metadatami": {
+      "priemer": 278.5,
+      "median": 175,
+      "p90": 489,
+      "max": 22604,
+      "prazdne": 0,
+      "do_10_slov": 0
+    }
+  },
+  "triedy_train_min_max": [
+    377,
+    600
+  ],
+  "triedy_test_min_max": [
+    251,
+    399
+  ],
+  "najmensia_trieda": "talk.religion.misc",
+  "najvacsia_trieda": "rec.sport.hockey",
+  "slovnik_train": {
+    "bez_uprav": {
+      "slov_v_slovniku": 120609,
+      "tokenov_spolu": 2158589,
+      "priemer_roznych_slov_na_dokument": 102.1,
+      "nenulovych_percent": 0.0846,
+      "slov_len_v_jednom_dokumente": 73414
+    },
+    "male": {
+      "slov_v_slovniku": 101631,
+      "tokenov_spolu": 2158589,
+      "priemer_roznych_slov_na_dokument": 97.5,
+      "nenulovych_percent": 0.096,
+      "slov_len_v_jednom_dokumente": 62208
+    },
+    "male+stemming": {
+      "slov_v_slovniku": 84064,
+      "tokenov_spolu": 2158589,
+      "priemer_roznych_slov_na_dokument": 93.1,
+      "nenulovych_percent": 0.1107,
+      "slov_len_v_jednom_dokumente": 54253
+    },
+    "male+stop": {
+      "slov_v_slovniku": 101322,
+      "tokenov_spolu": 1223092,
+      "priemer_roznych_slov_na_dokument": 66.8,
+      "nenulovych_percent": 0.0659,
+      "slov_len_v_jednom_dokumente": 62207
+    },
+    "male+stop+stemming": {
+      "slov_v_slovniku": 83918,
+      "tokenov_spolu": 1223092,
+      "priemer_roznych_slov_na_dokument": 62.9,
+      "nenulovych_percent": 0.0749,
+      "slov_len_v_jednom_dokumente": 54280
+    },
+    "male+cistenie": {
+      "slov_v_slovniku": 94365,
+      "tokenov_spolu": 2182622,
+      "priemer_roznych_slov_na_dokument": 94.2,
+      "nenulovych_percent": 0.0999,
+      "slov_len_v_jednom_dokumente": 57852
+    },
+    "male+cistenie+stemming": {
+      "slov_v_slovniku": 77011,
+      "tokenov_spolu": 2182622,
+      "priemer_roznych_slov_na_dokument": 89.8,
+      "nenulovych_percent": 0.1166,
+      "slov_len_v_jednom_dokumente": 50021
+    },
+    "male+cistenie+stop": {
+      "slov_v_slovniku": 94056,
+      "tokenov_spolu": 1247396,
+      "priemer_roznych_slov_na_dokument": 63.5,
+      "nenulovych_percent": 0.0675,
+      "slov_len_v_jednom_dokumente": 57851
+    },
+    "male+cistenie+stop+stemming": {
+      "slov_v_slovniku": 76864,
+      "tokenov_spolu": 1247396,
+      "priemer_roznych_slov_na_dokument": 59.6,
+      "nenulovych_percent": 0.0775,
+      "slov_len_v_jednom_dokumente": 50047
+    }
+  }
+}

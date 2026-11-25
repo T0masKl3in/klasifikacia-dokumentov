@@ -1,0 +1,6 @@
+{
+  "predspracovanie": "D_stop_slova",
+  "reprezentacia": "R6_TF_IDF_log_tf_bigramy",
+  "kriterium": "najvyšší priemer makro F1 z 5-násobnej CV oboch klasifikátorov",
+  "prazdnych_vyhodenych_z_trenovania": 311
+}

@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3675.33it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\04_embeddingy.py:119: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  info["rozmer"] = int(model.get_sentence_embedding_dimension())
+== all-MiniLM-L6-v2 {'rozmer': 384, 'max_tokenov': 256}
+   zaciatok: zakódované (11003, 384) (7532, 384) {'rozmer': 384, 'max_tokenov': 256}
+   all-MiniLM-L6-v2|zaciatok|LogistickaRegresia            {'C': 3} CV 0.7225 test {'accuracy': 0.6722, 'precision_macro': 0.6642, 'recall_macro': 0.6593, 'f1_macro': 0.6589}
+   all-MiniLM-L6-v2|zaciatok|LinearSVC                     {'C': 0.3} CV 0.7221 test {'accuracy': 0.6763, 'precision_macro': 0.6652, 'recall_macro': 0.6621, 'f1_macro': 0.6588}
+   all-MiniLM-L6-v2|zaciatok|kNN                           {'n_neighbors': 5} CV 0.774 test {'accuracy': 0.6806, 'precision_macro': 0.6768, 'recall_macro': 0.6689, 'f1_macro': 0.6688}
+   hybrid w=0.1: CV 0.8016
+   hybrid w=0.2: CV 0.8046
+   hybrid w=0.3: CV 0.8019
+   hybrid w=0.5: CV 0.7955
+   hybrid w=1.0: CV 0.7801
+   hybrid w=2.0: CV 0.7589
+   all-MiniLM-L6-v2|zaciatok|Hybrid_TFIDF_LinearSVC        test {'accuracy': 0.7354, 'precision_macro': 0.7313, 'recall_macro': 0.7215, 'f1_macro': 0.7205}
+   useky: zakódované (11003, 384) (7532, 384) {'rozmer': 384, 'max_tokenov': 256}
+   all-MiniLM-L6-v2|useky|LogistickaRegresia               {'C': 3} CV 0.7254 test {'accuracy': 0.6737, 'precision_macro': 0.666, 'recall_macro': 0.6608, 'f1_macro': 0.6605}
+   all-MiniLM-L6-v2|useky|LinearSVC                        {'C': 0.3} CV 0.7234 test {'accuracy': 0.6784, 'precision_macro': 0.6673, 'recall_macro': 0.6641, 'f1_macro': 0.6606}
+   all-MiniLM-L6-v2|useky|kNN                              {'n_neighbors': 5} CV 0.7773 test {'accuracy': 0.6855, 'precision_macro': 0.6811, 'recall_macro': 0.6734, 'f1_macro': 0.673}
+   hybrid w=0.1: CV 0.8016
+   hybrid w=0.2: CV 0.8042
+   hybrid w=0.3: CV 0.8027
+   hybrid w=0.5: CV 0.7922
+   hybrid w=1.0: CV 0.7781
+   hybrid w=2.0: CV 0.7581
+   all-MiniLM-L6-v2|useky|Hybrid_TFIDF_LinearSVC           test {'accuracy': 0.7375, 'precision_macro': 0.7331, 'recall_macro': 0.7238, 'f1_macro': 0.7229}

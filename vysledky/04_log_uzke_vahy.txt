@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2682.23it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\04_embeddingy.py:119: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  info["rozmer"] = int(model.get_sentence_embedding_dimension())
+== all-MiniLM-L6-v2 {'rozmer': 384, 'max_tokenov': 256}
+   zaciatok: zakódované (11003, 384) (7532, 384) {'rozmer': 384, 'max_tokenov': 256}
+   all-MiniLM-L6-v2|zaciatok|LogistickaRegresia            {'C': 3} CV 0.7225 test {'accuracy': 0.6722, 'precision_macro': 0.6642, 'recall_macro': 0.6593, 'f1_macro': 0.6589}
+   all-MiniLM-L6-v2|zaciatok|LinearSVC                     {'C': 0.3} CV 0.7221 test {'accuracy': 0.6763, 'precision_macro': 0.6652, 'recall_macro': 0.6621, 'f1_macro': 0.6588}
+   all-MiniLM-L6-v2|zaciatok|kNN                           {'n_neighbors': 5} CV 0.774 test {'accuracy': 0.6806, 'precision_macro': 0.6768, 'recall_macro': 0.6689, 'f1_macro': 0.6688}
+   hybrid w=0.5: CV 0.7955
+   hybrid w=1.0: CV 0.7801

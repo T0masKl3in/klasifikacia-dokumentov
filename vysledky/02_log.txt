@@ -1,0 +1,43 @@
+Trénovacích dokumentov: 11003 (prázdnych vyhodených: 311)
+A bez_uprav        {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7325, 'f1_cv_odchylka': 0.008, 'cas_s': 15.4, 'velkost_slovnika': 120609}
+A bez_uprav        {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7659, 'f1_cv_odchylka': 0.0122, 'cas_s': 10.5, 'velkost_slovnika': 120609}
+A male             {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7405, 'f1_cv_odchylka': 0.0096, 'cas_s': 4.7, 'velkost_slovnika': 101631}
+A male             {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7693, 'f1_cv_odchylka': 0.0158, 'cas_s': 9.5, 'velkost_slovnika': 101631}
+A male+stemming    {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7359, 'f1_cv_odchylka': 0.0119, 'cas_s': 4.7, 'velkost_slovnika': 84064}
+A male+stemming    {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.766, 'f1_cv_odchylka': 0.0163, 'cas_s': 8.7, 'velkost_slovnika': 84064}
+A male+stop        {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.762, 'f1_cv_odchylka': 0.0099, 'cas_s': 3.3, 'velkost_slovnika': 101322}
+A male+stop        {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7748, 'f1_cv_odchylka': 0.0127, 'cas_s': 7.2, 'velkost_slovnika': 101322}
+A male+stop+stemming {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7552, 'f1_cv_odchylka': 0.014, 'cas_s': 3.0, 'velkost_slovnika': 83918}
+A male+stop+stemming {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.769, 'f1_cv_odchylka': 0.0124, 'cas_s': 6.1, 'velkost_slovnika': 83918}
+A male+cistenie    {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.736, 'f1_cv_odchylka': 0.0109, 'cas_s': 4.2, 'velkost_slovnika': 94365}
+A male+cistenie    {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7663, 'f1_cv_odchylka': 0.0165, 'cas_s': 9.0, 'velkost_slovnika': 94365}
+A male+cistenie+stemming {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7357, 'f1_cv_odchylka': 0.0125, 'cas_s': 4.0, 'velkost_slovnika': 77011}
+A male+cistenie+stemming {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7622, 'f1_cv_odchylka': 0.0162, 'cas_s': 8.0, 'velkost_slovnika': 77011}
+A male+cistenie+stop {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7583, 'f1_cv_odchylka': 0.0106, 'cas_s': 3.1, 'velkost_slovnika': 94056}
+A male+cistenie+stop {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7715, 'f1_cv_odchylka': 0.0119, 'cas_s': 7.0, 'velkost_slovnika': 94056}
+A male+cistenie+stop+stemming {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7551, 'f1_cv_odchylka': 0.0155, 'cas_s': 2.7, 'velkost_slovnika': 76864}
+A male+cistenie+stop+stemming {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7647, 'f1_cv_odchylka': 0.0136, 'cas_s': 5.7, 'velkost_slovnika': 76864}
+Najlepšie predspracovanie (priemer oboch klasifikátorov): male+stop
+B R1_binarne_BoW             {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7159, 'f1_cv_odchylka': 0.0145, 'cas_s': 3.2, 'velkost_slovnika': 101322}
+B R1_binarne_BoW             {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.6713, 'f1_cv_odchylka': 0.0049, 'cas_s': 23.5, 'velkost_slovnika': 101322}
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\svm\_base.py:1295: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\svm\_base.py:1295: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\svm\_base.py:1295: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\svm\_base.py:1295: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+B R2_pocetnosti_TF           {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7152, 'f1_cv_odchylka': 0.015, 'cas_s': 3.4, 'velkost_slovnika': 101322}
+B R2_pocetnosti_TF           {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.6585, 'f1_cv_odchylka': 0.0119, 'cas_s': 39.7, 'velkost_slovnika': 101322}
+B R3_TF_normovane            {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7337, 'f1_cv_odchylka': 0.0085, 'cas_s': 3.3, 'velkost_slovnika': 101322}
+B R3_TF_normovane            {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7464, 'f1_cv_odchylka': 0.0138, 'cas_s': 6.9, 'velkost_slovnika': 101322}
+B R4_TF_IDF                  {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.762, 'f1_cv_odchylka': 0.0099, 'cas_s': 3.2, 'velkost_slovnika': 101322}
+B R4_TF_IDF                  {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7748, 'f1_cv_odchylka': 0.0127, 'cas_s': 7.3, 'velkost_slovnika': 101322}
+B R5_TF_IDF_log_tf           {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7555, 'f1_cv_odchylka': 0.01, 'cas_s': 3.3, 'velkost_slovnika': 101322}
+B R5_TF_IDF_log_tf           {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7762, 'f1_cv_odchylka': 0.0111, 'cas_s': 7.3, 'velkost_slovnika': 101322}
+B R6_TF_IDF_log_tf_bigramy   {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.7617, 'f1_cv_odchylka': 0.0105, 'cas_s': 16.4, 'velkost_slovnika': 943737}
+B R6_TF_IDF_log_tf_bigramy   {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7837, 'f1_cv_odchylka': 0.0104, 'cas_s': 38.2, 'velkost_slovnika': 943737}
+B R7_R6_bez_zriedkavych      {'klasifikator': 'MultinomialNB', 'f1_cv_priemer': 0.758, 'f1_cv_odchylka': 0.0136, 'cas_s': 7.0, 'velkost_slovnika': 147857}
+B R7_R6_bez_zriedkavych      {'klasifikator': 'LinearSVC', 'f1_cv_priemer': 0.7768, 'f1_cv_odchylka': 0.0111, 'cas_s': 12.1, 'velkost_slovnika': 147857}
+Najlepšia reprezentácia: R6_TF_IDF_log_tf_bigramy

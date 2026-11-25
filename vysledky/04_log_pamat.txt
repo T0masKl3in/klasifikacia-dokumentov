@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\04_embeddingy.py", line 106, in main
+    svc_c = nacitaj_json("03_klasifikatory.json")["modely"]["LinearSVC"]["najlepsie_parametre"]["C"]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'LinearSVC'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\04_embeddingy.py", line 187, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\04_embeddingy.py", line 111, in main
+    cv=CV, scoring="f1_macro", n_jobs=5).fit(tr_p, ytr)
+                                         ~~~^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1134, in fit
+    self._run_search(evaluate_candidates, callback_ctx=root_callback_ctx)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1721, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid), callback_ctx=search_ctx)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1083, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        ) in zip(candidate_split_pairs, evaluation_contexts)
+    )
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\2003k\Desktop\claude\klasifikacia-dokumentov\.venv\Lib\site-packages\joblib\parallel.py", line 1822, in _retrieve
+    time.sleep(0.01)
+    ~~~~~~~~~~^^^^^^
+OSError: [WinError 1450] Insufficient system resources exist to complete the requested service
+exit=1
